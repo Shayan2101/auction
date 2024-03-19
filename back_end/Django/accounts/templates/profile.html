@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+    {% block head %}
+        <title>Profile</title>
+        <h1>Hello, {{ user.username }}!</h1>
+        <h3>Email: {{ user.email }}</h3>
+    {% endblock %}
+
+    {% block body %}
+        <a href="{% url 'accounts:logout' %}">Logout</a>
+    {% endblock %}
